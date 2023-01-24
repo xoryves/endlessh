@@ -47,6 +47,11 @@ A SIGHUP signal requests a reload of the configuration file (`-f`).
 
 A SIGUSR1 signal will print connections stats to the log.
 
+`TZ` environment variable is respected for logging.
+Timezone can be set to UTC even if system timezone is something else.
+
+    TZ=UTC endlessh
+
 ## Sample Configuration File
 
 The configuration file has similar syntax to OpenSSH.
