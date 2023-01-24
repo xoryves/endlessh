@@ -2,7 +2,7 @@
 CC       = cc
 CFLAGS   = -std=c99 -Wall -Wextra -Wno-missing-field-initializers -Os
 CPPFLAGS =
-LDFLAGS  = -ggdb3
+LDFLAGS  = -ggdb3 -static
 LDLIBS   =
 PREFIX   = /usr/local
 
