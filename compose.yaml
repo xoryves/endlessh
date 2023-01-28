@@ -1,0 +1,14 @@
+services:
+  server:
+    container_name: endlessh
+    volumes:
+      - '/usr/share/zoneinfo/Europe/Berlin:/etc/localtime:ro'
+    build: .
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    network_mode: host
+    restart: unless-stopped
+    image: endlessh
