@@ -7,3 +7,4 @@ docker build . --rm -t endlessh:latest
 docker create --name endlessh endlessh:latest
 docker cp endlessh:/endlessh .
 docker rm endlessh
+docker image prune --filter label=stage=builder
